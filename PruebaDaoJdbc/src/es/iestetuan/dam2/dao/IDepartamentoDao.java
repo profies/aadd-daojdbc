@@ -4,7 +4,7 @@ import java.util.List;
 
 import es.iestetuan.dam2.vo.Departamento;
 
-public interface IDepartamento {
+public interface IDepartamentoDao {
  public Departamento consultarDepartamento(int idDepartamento);
  public List<Departamento> consultarDepartamentosNombre(String nombre);
  public void crearDepartamento(Departamento departamento);

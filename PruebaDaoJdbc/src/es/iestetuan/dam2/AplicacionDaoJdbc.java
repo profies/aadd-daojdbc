@@ -2,15 +2,15 @@ package es.iestetuan.dam2;
 
 import java.util.List;
 
-import es.iestetuan.dam2.dao.IDepartamento;
-import es.iestetuan.dam2.dao.jdbc.DepartamentoJdbcDao;
+import es.iestetuan.dam2.dao.IDepartamentoDao;
+import es.iestetuan.dam2.dao.jdbc.DepartamentoDaoJdbc;
 import es.iestetuan.dam2.vo.Departamento;
 
 public class AplicacionDaoJdbc {
 
 	public static void main(String[] args) {
 		// Implementación JDBC
-    	IDepartamento operacionesDepartamento = new DepartamentoJdbcDao();
+    	IDepartamentoDao operacionesDepartamento = new DepartamentoDaoJdbc();
     	
     	// Consulta 
     	Departamento departamento = operacionesDepartamento.consultarDepartamento(50);

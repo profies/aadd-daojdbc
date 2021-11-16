@@ -9,11 +9,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import es.iestetuan.dam2.dao.IDepartamento;
+import es.iestetuan.dam2.dao.IDepartamentoDao;
 import es.iestetuan.dam2.utilidades.GestorConexion;
 import es.iestetuan.dam2.vo.Departamento;
 
-public class DepartamentoJdbcDao implements IDepartamento {
+public class DepartamentoDaoJdbc implements IDepartamentoDao {
 	
 	@Override
 	public Departamento consultarDepartamento(int idDepartamento) {
